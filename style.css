@@ -68,7 +68,9 @@ body {
 }
 
 .principal_link_link {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
     width: 378px;
     padding: 16px 0;
     text-decoration: none;
@@ -80,4 +82,9 @@ body {
     font-size: 24px;
     line-height: 36px;
     border-radius: 8px;
+}
+
+.principal_link_link:hover {
+    background-color: #0f0f0f;
+    width: 400px;
 }
