@@ -120,4 +120,9 @@ body {
     font-size: 24px;
     line-height: 29.26px;
     font-weight: 600;
+    text-decoration: none;
+}
+
+.cabecalho_menu_link:hover {
+    color: #f6f6f6;
 }
