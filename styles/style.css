@@ -7,55 +7,65 @@
     padding: 0;
 }
 
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciara: #22D4FD;
+    --cor-hover: #0f0f0f;
+
+    --font-primaria: 'Krona One', sans-serif;
+    --font-secundaria: 'Montserrat', sans-serif;
+}
+
 body {
-    /* height: 100vh; */
     box-sizing: border-box;
-    background-color: black;
+    background-color: var(--cor-primaria);
 }
 
 .principal {
-    margin: 10% 7%;
+    padding: 10% 7%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .principal_texto {
-    width: 615px;
+    width: 593px;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
 .principal_texto_titulo {
-    color: #f6f6f6;
-    font-family: 'Krona One', sans-serif;
+    color: var(--cor-secundaria);
+    font-family: var(--font-primaria);
     font-size: 36px;
     font-weight: 400;
     line-height: 56px;
 }
 
 .destaque {
-    color: #22D4FD;
+    color: var(--cor-terciara);
 }
 
 .principal_texto_subtitulo {
-    color: #f6f6f6;
-    font-family: 'Montserrat', sans-serif;
+    color: var(--cor-secundaria);
+    font-family: var(--font-secundaria);
     font-size: 24px;
     font-weight: 400;
     line-height: 36px;
 }
 
 .principal_texto_redes {
-    color: #f6f6f6;
-    font-family: 'Krona One', sans-serif;
+    color: var(--cor-secundaria);
+    font-family: var(--font-primaria);
     font-size: 24px;
     font-weight: 400;
     line-height: 40px;
 }
 
 .principal_imagem {
+    align-self: flex-start;
     width: 488px;
     height: 550px;
 }
@@ -74,10 +84,10 @@ body {
     width: 378px;
     padding: 16px 0;
     text-decoration: none;
-    background-color: black;
-    border: 2px solid #22D4FD;
-    color: #f6f6f6;
-    font-family: 'Montserrat', sans-serif;
+    background-color: var(--cor-primaria);
+    border: 2px solid var(--cor-terciara);
+    color: var(--cor-secundaria);
+    font-family: var(--font-secundaria);
     font-weight: 600;
     font-size: 24px;
     line-height: 36px;
@@ -90,16 +100,16 @@ body {
 }
 
 .principal_link_link:hover {
-    background-color: #0f0f0f;
+    background-color: var(--cor-hover);
     width: 400px;
 }
 
 .rodape {
     text-align: center;
-    background-color: #22D4FD;
-    color: black;
+    background-color: var(--cor-terciara);
+    color: var(--cor-primaria);
     padding: 23.64px 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-secundaria);
     font-size: 24px;
     line-height: 36px;
     font-weight: 400;
@@ -115,8 +125,8 @@ body {
 }
 
 .cabecalho_menu_link {
-    color: #22D4FD;
-    font-family: 'Montserrat', sans-serif;
+    color: var(--cor-terciara);
+    font-family: var(--font-secundaria);
     font-size: 24px;
     line-height: 29.26px;
     font-weight: 600;
@@ -124,5 +134,5 @@ body {
 }
 
 .cabecalho_menu_link:hover {
-    color: #f6f6f6;
+    color: var(--cor-secundaria);
 }
