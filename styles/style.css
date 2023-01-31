@@ -15,6 +15,12 @@
 
     --font-primaria: 'Krona One', sans-serif;
     --font-secundaria: 'Montserrat', sans-serif;
+
+    --tamanho-font-grande: 2.25rem;
+    --tamanho-font-pequeno: 1.5rem;
+
+    --tamanho-imagem: 45%;
+    --tamanho-texto: 49%;
 }
 
 body {
@@ -23,14 +29,14 @@ body {
 }
 
 .principal {
-    padding: 10% 7%;
+    padding: 10% 5%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .principal_texto {
-    width: 593px;
+    width: var(--tamanho-texto);
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -39,7 +45,7 @@ body {
 .principal_texto_titulo {
     color: var(--cor-secundaria);
     font-family: var(--font-primaria);
-    font-size: 36px;
+    font-size: var(--tamanho-font-grande);
     font-weight: 400;
     line-height: 56px;
 }
@@ -51,7 +57,7 @@ body {
 .principal_texto_subtitulo {
     color: var(--cor-secundaria);
     font-family: var(--font-secundaria);
-    font-size: 24px;
+    font-size: var(--tamanho-font-pequeno);
     font-weight: 400;
     line-height: 36px;
 }
@@ -59,15 +65,13 @@ body {
 .principal_texto_redes {
     color: var(--cor-secundaria);
     font-family: var(--font-primaria);
-    font-size: 24px;
+    font-size: var(--tamanho-font-pequeno);
     font-weight: 400;
     line-height: 40px;
 }
 
 .principal_imagem {
-    align-self: flex-start;
-    width: 488px;
-    height: 550px;
+    width: var(--tamanho-imagem);
 }
 
 .principal_link {
@@ -89,7 +93,7 @@ body {
     color: var(--cor-secundaria);
     font-family: var(--font-secundaria);
     font-weight: 600;
-    font-size: 24px;
+    font-size: var(--tamanho-font-pequeno);
     line-height: 36px;
     border-radius: 8px;
 }
@@ -110,7 +114,7 @@ body {
     color: var(--cor-primaria);
     padding: 23.64px 0;
     font-family: var(--font-secundaria);
-    font-size: 24px;
+    font-size: var(--tamanho-font-pequeno);
     line-height: 36px;
     font-weight: 400;
 }
@@ -127,7 +131,7 @@ body {
 .cabecalho_menu_link {
     color: var(--cor-terciara);
     font-family: var(--font-secundaria);
-    font-size: 24px;
+    font-size: var(--tamanho-font-pequeno);
     line-height: 29.26px;
     font-weight: 600;
     text-decoration: none;
