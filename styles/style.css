@@ -12,15 +12,20 @@
     --cor-secundaria: #F6F6F6;
     --cor-terciara: #22D4FD;
     --cor-hover: #0f0f0f;
-
+    --padding: 10% 5%;
+    --padding-header: 3% 0% 0% 7%;
+    --padding-min-width: 10% 26%; 
+    --padding-header-min-width: 3% 0% 0% 26%;
+    --padding-header-max-width: 10% 0% 5% 5%;
     --font-primaria: 'Krona One', sans-serif;
     --font-secundaria: 'Montserrat', sans-serif;
-
     --tamanho-font-grande: 2.25rem;
     --tamanho-font-pequeno: 1.5rem;
-
     --tamanho-imagem: 45%;
-    --tamanho-texto: 49%;
+    --tamanho-texto: 50%;
+    --tamanho-font-grande-mobile: 2rem;
+    --tamanho-imagem-mobile: 70%;
+    --tamanho-texto-mobile: 30%
 }
 
 body {
@@ -29,10 +34,11 @@ body {
 }
 
 .principal {
-    padding: 10% 5%;
+    padding: var(--padding);
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 82px;
 }
 
 .principal_texto {
@@ -72,6 +78,7 @@ body {
 
 .principal_imagem {
     width: var(--tamanho-imagem);
+    align-self: flex-start;
 }
 
 .principal_link {
@@ -105,7 +112,6 @@ body {
 
 .principal_link_link:hover {
     background-color: var(--cor-hover);
-    width: 400px;
 }
 
 .rodape {
@@ -120,7 +126,7 @@ body {
 }
 
 .cabecalho {
-    padding: 3% 0% 0% 7%;
+    padding: var(--padding-header);
 }
 
 .cabecalho_menu {
@@ -139,4 +145,50 @@ body {
 
 .cabecalho_menu_link:hover {
     color: var(--cor-secundaria);
+}
+
+@media (min-width: 2560px) {
+    .principal {
+        padding: var(--padding-min-width);
+    }
+
+    .cabecalho {
+        padding: var(--padding-header-min-width);
+    }
+}
+
+@media (max-width: 1000px) {
+    .cabecalho {
+        padding: 10% 0% 5% 0%;
+    }
+
+    .cabecalho_menu {
+        justify-content: center;
+    }
+
+    .principal {
+        flex-direction: column-reverse;
+        gap: 80.66px;
+    }
+
+    .principal_texto {
+        width: 100%;
+    }
+
+    .principal_texto_titulo {
+        font-size: var(--tamanho-font-grande-mobile);
+    }
+
+    .principal_link_link {
+        width: 80%;
+    }
+
+    .principal_imagem {
+        width: 80%;
+        align-self: center;
+    }   
+
+    .rodape {
+        font-size: 1.2rem;
+    }
 }
