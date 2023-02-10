@@ -196,6 +196,11 @@ a {
     transition: 0.2s;
 }
 
+.canvas {
+    background-image: url("../assets/freeway/estrada.png");
+    background-size: cover;
+}
+
 @media (min-width: 2560px) {
     .principal {
         padding: var(--padding-min-width);
