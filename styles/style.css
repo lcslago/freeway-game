@@ -11,8 +11,8 @@
 :root {
     --cor-primaria: #191A19;
     --cor-secundaria: whitesmoke;
-    --cor-terciara: #4E9F3D;
-    --cor-hover: #1E5128;
+    --cor-terciara: #35f50e;
+    --cor-hover: #b6f1aa;
     --padding: 10% 5%;
     --padding-header: 3% 0 0;
     --padding-min-width: 10% 26%; 
@@ -57,7 +57,7 @@ body {
 
 .cabecalho_menu_link:hover, .rodape_link:hover {
     color: var(--cor-secundaria);
-    text-shadow: 0 0 15px var(--cor-secundaria);
+    text-shadow: 0 0 5px var(--cor-secundaria);
 }
 
 .principal {
@@ -87,6 +87,17 @@ body {
 
 .destaque {
     color: var(--cor-terciara);
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+
+.destaque:hover {
+    text-shadow: 0 0 3px var(--cor-secundaria);
+    color: var(--cor-hover);
+}
+
+a {
+    text-decoration: none;
 }
 
 .html {
