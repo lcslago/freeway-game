@@ -7,9 +7,9 @@ const quadro = canvas.getContext('2d');
 // cenario.onload = constroiCenario;
 ator.onload = mostraObjetos, movimentaCarro;
 
-setInterval(mostraObjetos, 25);
-setInterval(movimentaCarro, 25);
+// document.onkeydown = movimentaAtor;
 
-
-
+// setInterval(movimentaAtor, 10);
+// setInterval(mostraObjetos, 25);
+// setInterval(movimentaCarro, 25);
 
