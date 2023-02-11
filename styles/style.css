@@ -199,6 +199,8 @@ a {
 .canvas {
     background-image: url("../assets/freeway/estrada.png");
     background-size: cover;
+    border: 1px solid var(--cor-secundaria);
+    box-shadow: 0 0 20px var(--cor-secundaria);
 }
 
 @media (min-width: 2560px) {

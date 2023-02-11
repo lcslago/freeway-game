@@ -1,34 +1,38 @@
 //listas para carros
 let yCarros = [40, 100, 155, 215, 270];
 let xCarros = [500, 500, 500, 500, 500];
-let velocidadeCarros = [6, 4.5, 2.5, 6.5, 3.5];
+let velocidadeCarros = [8, 7, 4, 10, 6.5];
 const xCarroInicial = 500;
 
 //dimensões do ator
-const xAtor = 85;
-const yAtor = 370;
-const wAtor = 30;
-const hAtor = 25;
-const yInicial = yAtor;
-const meusPontos = 0;
-let velocidadeAtor = 4;
+let xAtor = 85;
+let yAtor = 370;
+let wAtor = 30;
+let hAtor = 25;
+let yInicial = yAtor;
+let yFinal = 5;
+let velocidadeAtor = 5;
+
+//pontos
+let meusPontos = 0;
+
+//contador
+let contador = 50;
+
+//telas
+let jogo = false;
+let fimDeJogo = false;
+let jogoParado = true;
+
+//movimentos do ator
+let cima = false;
+let baixo = false;
 
 //dimensões do carro
 const wCarro = 55;
 const hCarro = 35;
 let intervalo = -80;
 
-function constroiCenario () {
-    quadro.drawImage(cenario, 0, 0, 500, 400);
-
-}
-
-function mostraObjetos () {
-    quadro.drawImage(ator, xAtor, yAtor, wAtor, hAtor);
-    for(i = 0; i < listaCarros.length; i++) {
-        quadro.drawImage(listaCarros[i], xCarros[i], yCarros[i], wCarro, hCarro);
-    }
-}
 
 
 
