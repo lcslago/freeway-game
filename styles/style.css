@@ -91,7 +91,7 @@ body {
     transition: 0.2s;
 }
 
-.destaque:hover {
+.destaque:hover, .freeway_destaque:hover {
     text-shadow: 0 0 3px var(--cor-secundaria);
     color: var(--cor-hover);
 }
@@ -194,13 +194,6 @@ a {
     color: var(--cor-secundaria);
     font-weight: bold;
     transition: 0.2s;
-}
-
-.canvas {
-    background-image: url("../assets/freeway/estrada.png");
-    background-size: cover;
-    border: 1px solid var(--cor-secundaria);
-    box-shadow: 0 0 20px var(--cor-secundaria);
 }
 
 @media (min-width: 2560px) {
