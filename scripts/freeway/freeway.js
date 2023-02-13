@@ -149,8 +149,8 @@ function mostraMenu() {
     quadro.drawImage(menu, 0, 0, 500, 400);
 }
 
-window.addEventListener('keydown', function(evento) { // para impedir que espaço scrolle a página
-    if(evento.code == "Space" && evento.target == document.body) {
-      evento.preventDefault();
+window.addEventListener('keydown', function (evento) { // para impedir que espaço scrolle a página
+    if (evento.code == "Space" && evento.target == document.body) {
+        evento.preventDefault();
     }
-  });
+});
