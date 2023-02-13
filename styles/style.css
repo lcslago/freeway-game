@@ -15,7 +15,7 @@
     --cor-hover: #b6f1aa;
     --padding: 10% 5%;
     --padding-header: 3% 0 0;
-    --padding-min-width: 10% 26%; 
+    --padding-min-width: 10% 26%;
     --padding-header-min-width: 3% 0% 0% 26%;
     --padding-header-max-width: 10% 0% 5% 5%;
     --font-primaria: 'Krona One', sans-serif;
@@ -31,7 +31,6 @@
 
 body {
     box-sizing: border-box;
-    /* background: linear-gradient(black, var(--cor-primaria)); */
     background: linear-gradient(45deg, #a03f22 15%, #0a4f7c, #af8027);
 }
 
@@ -55,7 +54,8 @@ body {
     transition: 0.2s;
 }
 
-.cabecalho_menu_link:hover, .rodape_link:hover {
+.cabecalho_menu_link:hover,
+.rodape_link:hover {
     color: var(--cor-secundaria);
     text-shadow: 0 0 5px var(--cor-secundaria);
 }
@@ -91,7 +91,8 @@ body {
     transition: 0.2s;
 }
 
-.destaque:hover {
+.destaque:hover,
+.freeway_destaque:hover {
     text-shadow: 0 0 3px var(--cor-secundaria);
     color: var(--cor-hover);
 }
@@ -112,7 +113,9 @@ a {
     background: linear-gradient(#af8027, #f0bf25);
 }
 
-.html, .css, .javascript {
+.html,
+.css,
+.javascript {
     border: 1px solid white;
     border-radius: 8px;
     padding: 0 2%;
@@ -162,7 +165,8 @@ a {
     transition: 0.3s;
 }
 
-.icone, .icone_freeway {
+.icone,
+.icone_freeway {
     width: 32px;
     height: 32px;
 }
@@ -170,8 +174,7 @@ a {
 .icone_freeway {
     width: 32px;
     height: 28px;
-    filter: drop-shadow(1px 1px 0 black) 
-            drop-shadow(-1px -1px 0 black);
+    filter: drop-shadow(1px 1px 0 var(--cor-primaria)) drop-shadow(-1px -1px 0 var(--cor-primaria));
 }
 
 .principal_link_link:hover {
@@ -194,13 +197,6 @@ a {
     color: var(--cor-secundaria);
     font-weight: bold;
     transition: 0.2s;
-}
-
-.canvas {
-    background-image: url("../assets/freeway/estrada.png");
-    background-size: cover;
-    border: 1px solid var(--cor-secundaria);
-    box-shadow: 0 0 20px var(--cor-secundaria);
 }
 
 @media (min-width: 2560px) {
@@ -237,7 +233,7 @@ a {
     .principal_imagem {
         width: 80%;
         align-self: center;
-    }   
+    }
 
     .rodape {
         font-size: 1.2rem;

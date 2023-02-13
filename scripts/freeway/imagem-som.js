@@ -21,3 +21,7 @@ const gameOver = new Image(500, 400);
 
 menu.src = "assets/freeway/menu.png";
 gameOver.src = "assets/freeway/game-over.png";
+
+//sons
+const colisao = new Audio("assets/audios/colidiu.mp3");
+const ponto = new Audio("assets/audios/pontos.wav");

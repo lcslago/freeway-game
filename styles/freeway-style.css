@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.freeway_apresentacao {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--padding);
+    gap: 82px;
+}
+
+.freeway_destaque {
+    color: var(--cor-terciara);
+    transition: 0.2s;
+}
+
+.canvas {
+    background-image: url("../assets/freeway/estrada.png");
+    background-size: cover;
+    border: 1px solid var(--cor-secundaria);
+    box-shadow: 0 0 20px var(--cor-secundaria);
+}
+
+@media (min-width: 2560px) {
+    .freeway_apresentacao {
+        padding: var(--padding-min-width);
+    }
+}
+
+@media (max-width: 1000px) {
+    .cabecalho {
+        padding: 10% 0% 5% 0%;
+    }
+
+    .cabecalho_menu {
+        justify-content: center;
+    }
+
+    .freeway_apresentacao {
+        flex-direction: column;
+        justify-content: center;
+        padding: 2%;
+        gap: 80.66px;
+    }
+
+    .principal_texto_subtitulo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .canvas {
+        width: 100%;
+    }
+
+    .rodape {
+        font-size: 1.2rem;
+    }
+}

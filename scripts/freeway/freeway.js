@@ -81,6 +81,7 @@ function marcaPonto() { // incrementa ou decrementa pontos
     if (yAtor < yFinal) {
         meusPontos += 1;
         yAtor = yInicial;
+        ponto.play();
     } else if (meusPontos < 0) {
         fimDeJogo = true;
     }
@@ -123,6 +124,7 @@ function verificaColisão() {
             hCarro)) {
             yAtor = yInicial;
             meusPontos -= 1;      //se houver colisão, 1 ponto será perdido
+            colisao.play();
         }
     }
 }
@@ -146,3 +148,9 @@ function mostraMenu() {
     quadro.fillRect(0, 0, 500, 400);
     quadro.drawImage(menu, 0, 0, 500, 400);
 }
+
+window.addEventListener('keydown', function (evento) { // para impedir que espaço scrolle a página
+    if (evento.code == "Space" && evento.target == document.body) {
+        evento.preventDefault();
+    }
+});
